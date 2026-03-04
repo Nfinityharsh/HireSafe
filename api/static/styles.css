@@ -52,7 +52,7 @@ nav a:hover { color: var(--primary); }
 }
 .hero-content h1 { font-size: clamp(2rem, 4vw, 3.2rem); margin: 0.5rem 0; }
 .eyebrow { text-transform: uppercase; color: var(--primary); font-weight: 700; letter-spacing: 0.08em; }
-.subtext { color: var(--muted); max-width: 720px; }
+.subtext { color: var(--muted); max-width: 650px; margin: 0 auto 40px auto; }
 .cta {
   display: inline-block;
   margin-top: 1.2rem;
