@@ -1,6 +1,6 @@
 import joblib
 import pandas as pd
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 
 app = Flask(__name__)
 
@@ -11,7 +11,7 @@ features = joblib.load("../model_features.pkl")
 
 @app.route("/")
 def home():
-    return "HireSafe API is running"
+    return render_template("index.html")
 
 
 @app.route("/predict", methods=["POST"])
